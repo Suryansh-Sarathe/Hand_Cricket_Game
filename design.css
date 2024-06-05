@@ -26,7 +26,7 @@
         color: transparent;
     }
     .restart,.scoreboard,.comment{
-        font-size:2vw;
+        font-size:1.5rem;
     }
 .one {
     background-image: url(images/single.jpg);
@@ -62,7 +62,7 @@
 .restart,.comment{
     background-color: #240750;
     padding:2rem;
-    font-size:5vw;
+    font-size:3rem;
     color:white;
     border-radius:4rem;
 }
@@ -79,7 +79,7 @@
     margin-top: 2rem;
     gap:20px;
     justify-content: center;
-    font-size: 5vw;
+    font-size: 3rem;
 }
 
 
