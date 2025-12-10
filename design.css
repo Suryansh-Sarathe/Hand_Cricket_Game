@@ -57,10 +57,10 @@
     opacity:0.7;
     cursor:pointer;
 }
-.restart,.comment{
+.restart,.comment,.replay{
     background-color: #240750;
     padding:2rem;
-    font-size:3vw;
+    font-size:20px;
     color:white;
     border-radius:4rem;
 }
@@ -80,4 +80,57 @@
     font-size: 3vw;
 }
 
+.tossbg{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
 
+.tossbox{
+    background-color:#240750;
+    padding:2rem;
+    width:24rem;
+    height:24rem;
+}
+
+#coin{
+    width:50%;
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font: 2rem bold;
+    border-radius: 50%;
+    background-color: grey;
+    border:5px black;
+    border-style: dashed;
+    margin:1rem auto;
+    animation: none;
+}
+
+@keyframes spin {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+#heads,#tails{
+    padding:1rem 2rem;
+    font-size:1.2rem;
+    border-radius:1rem;
+    border:none;
+    color:white;
+    background-color:#57A6A1;
+    cursor:pointer;
+    margin: 0 1rem;
+}
+
+#heads:hover,#tails:hover{
+    background-color:#30b707;
+}

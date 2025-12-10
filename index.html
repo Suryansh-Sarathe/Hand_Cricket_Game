@@ -13,6 +13,17 @@
     <title>Hand Cricket Game</title>
   </head>
   <body>
+    <div class="tossbg">
+      <div class="tossbox">
+        <h2 class="display-4 bg-transparent text-white toss-heading">Toss</h2>
+        <div id="coin">Coin</div>
+        <div class="toss-choices row bg-transparent flex justify-content-center align-items-center gap-2">
+          <button id="heads"> Heads </button>
+          <button id="tails"> Tails </button>
+        </div>
+      </div>
+    </div>
+    
     <div class="container-fluid" >
       <h1 id="mainHead">Hand Cricket &#127951</h1>
         <!-- images -->
@@ -27,17 +38,22 @@
 
         <!-- scoreboard -->
         <div class="row scoreboard">
-            <div class="col-md-4 high-score">High Score: 0(0)</div>
+            <div class="col-md-4 target hide">Target: 0</div>
             <div class="col-md-4 score">Score: 0(0)</div>
         </div>
         <!-- msg-container -->
         <div class="row msg-container">
             <div class="col-md-4 comment">Play!</div>
-            <div class="col-md-4 restart hide">Restart</div>
+            <div class="col-md-4 restart hide"></div>
+            <div class="col-md-4 replay hide">Replay</div>
+            
         </div>
 
       
     </div>
+
+    <div id="tossInfo" class="hide"></div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -46,5 +62,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- js file -->
     <script src="logic.js"></script>
+    <script src="toss.js"></script>
   </body>
 </html>
